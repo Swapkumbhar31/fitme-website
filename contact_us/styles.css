@@ -15,7 +15,7 @@ body{
 }
 
 :root {
-    --eco: #5CDB95;
+    --eco: #26424C;
     --off-white: #f7f7f7;
     --cap-violet: #3f48cc;
     --hr-blue: #05386b
@@ -35,4 +35,82 @@ body{
 
 .eco-green {
     color: var(--eco);
+}
+
+
+
+/*-------------------------------------*/
+/*      >>> Header Styles <<<          */
+/*-------------------------------------*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 0 0 6px 3px lightgray;
+    /*margin-bottom: 3rem;*/
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 2;
+}
+
+.top-fixed {
+    /* For Sticky Navbar */
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 125px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    /* font-weight: bold; */
+}
+
+nav ul {
+    /*max-height: 192px;*/
+    padding-bottom: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--off-white);
+    transition: 0.3s;
+}
+
+nav ul li a.active {
+    color: var(--eco);
+}
+
+.caret {
+    display: none;
+}
+
+.menulist-container {
+    margin-top: 2vh;
+}
+
+nav input {
+    display: none;
 }
