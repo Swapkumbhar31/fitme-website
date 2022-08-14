@@ -15,7 +15,7 @@ body{
 }
 
 :root {
-    --eco: #EDEDED;
+    --eco: #26424C;
     --off-white: #f7f7f7;
     --cap-violet: #3f48cc;
     --hr-blue: #05386b
@@ -83,11 +83,12 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin-right: 30px;
+    color: #26424C;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #26424C;
     font-size: 1.2rem;
     padding: 0.6rem 1rem;
     border-radius: 3px;
@@ -95,12 +96,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: var(--off-white);
+    background-color: #26424C;
+    color: white;
     transition: 0.3s;
 }
 
 nav ul li a.active {
-    color: var(--eco);
+    color: white;
+    background-color: #26424C;
+   
+    
 }
 
 .caret {
@@ -187,7 +192,8 @@ section{
 	text-align: center;
 }
 .container p{
-    font-size: 26px;
+    padding-top: 1.5rem;
+    font-size: 16px;
     letter-spacing: 6px;
     opacity: 0.9;
 	text-align: center;
@@ -244,6 +250,7 @@ section{
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
+    padding-top: 2rem;
   width: 100%; /* Full width */
   padding: 6px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
