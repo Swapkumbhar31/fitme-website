@@ -95,11 +95,11 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: var(--off-white);
-    color: var(--black);
+    color: var(--primaryColor);
 }
 
 nav ul li a.active {
-    color: var(--black);
+    color: var(--primaryColor);
     background-color: var(--white);
 }
 
@@ -312,7 +312,7 @@ main {
 
     nav input:checked+div.menu-wrapper>svg#icon {
         transform: rotate(90deg);
-        fill: var(--primaryColor);
+        fill: var(--white);
         transition: 0.5s;
     }
 
@@ -337,13 +337,13 @@ main {
 
     nav ul li a.active {
         background-color: white;
-        color: var(--black);
+        color: var(--primaryColor);
         /* font-weight: bold; */
     }
 
     nav ul li a:hover {
         background-color: var(--off-white);
-        color: black;
+        color: var(--primaryColor);
     }
 
     .caret {
