@@ -2,6 +2,7 @@
 
 :root {
     --primaryColor: #26424C;
+    --primaryLightColor: #51afd1;
     --off-white: #eaeaea;
     --white: #fff;
     --black: rgb(0, 0, 0);
@@ -34,7 +35,7 @@ body {
 }
 
 .primaryColor {
-    color: var(--primaryColor);
+    color: var(--primaryLightColor);
 }
 
 /*-------------------------------------*/
@@ -47,7 +48,6 @@ body {
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    box-shadow: 0 0 6px 3px grey;
     /*margin-bottom: 3rem;*/
     background-color: var(--primaryColor);
     font-family: 'Source Sans Pro', sans-serif;
@@ -114,6 +114,101 @@ nav input {
     display: none;
 }
 
+/*--------------------------------------*/
+/*       >>> Content Styles <<<         */
+/*--------------------------------------*/
+
+.container {
+    top: 80px;
+}
+
+main {
+    font-family: Cambria, "Times New Roman", Times, serif;
+    /*font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;*/
+}
+
+.content {
+    max-width: 80%;
+    margin: 3rem auto;
+    padding: 1rem;
+
+}
+
+.banner-img {
+    top: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpeg");
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.banner-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.618rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    color: white;
+}
+
+.banner-text .green {
+    color: var(--primaryColor);
+}
+
+.responsive-text {
+    line-height: 32px;
+    font-size: 1.35rem;
+    word-break: break-word;
+}
+
+.row {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    align-content: center;
+    margin: 5rem 0;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 1.5rem;
+
+}
+
+.flex-main {
+    flex: 60%;
+}
+
+.flex-sub {
+    flex: 40%;
+}
+
+.flex-third {
+    flex: 33%;
+}
+
+.column-left {
+    padding: 0 0.75rem;
+    margin: auto;
+}
+
+.column-right {
+    padding: 0 0.75rem;
+    margin: auto;
+}
+
+.img-content-side {
+    max-width: 100%;
+    min-height: 330px;
+    height: auto;
+    margin: 2rem auto auto;
+
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -125,7 +220,6 @@ nav input {
         ;
         background-color: var(--primaryColor);
         /*border-bottom: 1px solid black;*/
-        box-shadow: 0 0 3px 3px grey;
     }
 
     nav ul {
@@ -171,7 +265,6 @@ nav input {
     #menu {
         overflow: hidden;
         transition: 0.7s;
-        box-shadow: 0 1px 2px 1px lightgray;
     }
 
     .menulist-container {
@@ -226,7 +319,7 @@ nav input {
     }
 
     .banner-text {
-        font-size: 1.618rem;
+        font-size: 1.200rem;
     }
 
     main {
@@ -235,7 +328,7 @@ nav input {
 
     .responsive-text {
         line-height: 30px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         word-break: break-word;
     }
 
