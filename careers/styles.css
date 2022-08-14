@@ -4,6 +4,7 @@
     --primaryColor: #26424C;
     --primaryLightColor: #51afd1;
     --off-white: #eaeaea;
+    --dark-white: #373737;
     --white: #fff;
     --black: rgb(0, 0, 0);
     --hr-blue: #05386b
@@ -143,7 +144,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
 .banner-text {
@@ -156,8 +156,8 @@ main {
     color: white;
 }
 
-.banner-text .green {
-    color: var(--primaryColor);
+.banner-text .primaryColor {
+    color: var(--primaryLightColor);
 }
 
 .responsive-text {
@@ -207,7 +207,61 @@ main {
     min-height: 330px;
     height: auto;
     margin: 2rem auto auto;
+}
 
+.p-title {
+    margin-bottom: 1rem;
+    font-size: 2.618rem;
+    color: var(--black);
+}
+
+.hr1 {
+    margin-top: 1rem;
+    height: 1px;
+    background: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    border-radius: 2px;
+    width: 95%;
+}
+
+.hr2-right {
+    height: 1px;
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    width: 50%;
+    transform: translate(100%);
+}
+
+.hr2-left {
+    height: 1px;
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    width: 50%;
+}
+
+.hr3 {
+    width: 50%;
+    transform: translate(50%);
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+
+}
+
+.big-letter {
+    font-size: 5rem;
+    line-height: 4rem;
+    float: left;
+    padding-right: 0.5rem;
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+
+.sub-title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -258,7 +312,7 @@ main {
 
     nav input:checked+div.menu-wrapper>svg#icon {
         transform: rotate(90deg);
-        fill: var(--eco);
+        fill: var(--primaryColor);
         transition: 0.5s;
     }
 
@@ -303,7 +357,7 @@ main {
 
     .click {
         transform: rotate(90deg);
-        fill: var(--eco);
+        fill: var(--primaryColor);
         transition: 0.5s;
     }
 
