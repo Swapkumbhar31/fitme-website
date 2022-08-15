@@ -39,6 +39,10 @@ body {
     color: var(--primaryLightColor);
 }
 
+.appThemeColor {
+    color: var(--primaryColor);
+}
+
 /*-------------------------------------*/
 /*      >>> Header Styles <<<          */
 /*-------------------------------------*/
@@ -264,6 +268,110 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.row-padding:after,
+.row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.quarter {
+    float: left;
+    width: 100%
+}
+
+.quarter {
+    padding: 0 15px
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--black);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: var(--primaryColor);
+    border: none;
+    color: white;
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.spacing {
+    height: 10px;
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+    padding: 10px 20px;
+}
+
+/*-------------------------------------*/
+/*       >>> Footer Styles <<<         */
+/*-------------------------------------*/
+
+.footer {
+    padding: 40px;
+    margin: 0;
+    position: relative;
+    background-color: var(--primaryColor);
+    color: white;
+    bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-img {
+    width: 8%;
+}
+
+@media (min-width:601px) {
+    .quarter {
+        width: 24.99999%
+    }
+}
+
+@media (max-width:992px) {
+
+    .row-padding,
+    .row-padding>.half,
+    .row-padding>.third,
+    .row-padding>.twothird,
+    .row-padding>.threequarter,
+    .row-padding>.quarter,
+    .row-padding>.col {
+        padding: 8px
+    }
+}
+
 @media only screen and (max-width: 1024px) {
 
     /*-------------------------------------*/
@@ -462,5 +570,9 @@ main {
         font-size: 1.618rem;
         padding-top: 3rem;
         font-weight: lighter;
+    }
+
+    .footer-img {
+        width: 15%;
     }
 }
