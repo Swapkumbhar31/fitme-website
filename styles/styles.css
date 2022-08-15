@@ -853,6 +853,56 @@ img {
     min-height: 350px;
 }
 
+
+.about {
+    background-color: rgb(234, 240, 252);
+    padding: 60px 0;
+  }
+.about div {
+
+    max-width: 1000px;
+    margin: auto;
+}
+.about h2 {
+    font-size: 3rem;
+    padding: 30px 0;
+}
+  .about p {
+    padding: 20px;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    gap: 10px;
+  }
+
+
+  .column-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .column-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .work-list {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .work-list div {
+    margin-bottom: 30px;
+  }
+
+  .work-list img {
+    height: 200px;
+    width: auto;
+    border-radius: 20px;
+  }
 @media only screen and (max-width: 906px) {
 
     nav input + div.menu-wrapper > ul#menu {
@@ -963,6 +1013,31 @@ img {
 
 
 }
+
+
+@media screen and (max-width: 600px) { 
+    .about p{
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .work-list div {
+      margin: 20px;
+    }
+    .testmonial-wrapper{
+      margin: 20px;
+    }
+      .column-2 {
+        grid-template-columns: 1fr;
+      }
+    
+      .column-3 {
+        grid-template-columns: 1fr;
+      }
+    
+      .grid.border-bottom {
+        border-bottom: 2px #212529 solid;
+      }
+    }
 
 @media only screen and (max-width: 600px) {
     section {
