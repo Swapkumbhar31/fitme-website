@@ -264,6 +264,46 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.row-padding:after,
+.row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.quarter {
+    float: left;
+    width: 100%
+}
+
+.quarter {
+    padding: 0 15px
+}
+
+@media (min-width:601px) {
+    .quarter {
+        width: 24.99999%
+    }
+}
+
+@media (max-width:992px) {
+
+    .row-padding,
+    .row-padding>.half,
+    .row-padding>.third,
+    .row-padding>.twothird,
+    .row-padding>.threequarter,
+    .row-padding>.quarter,
+    .row-padding>.col {
+        padding: 8px
+    }
+}
+
 @media only screen and (max-width: 1024px) {
 
     /*-------------------------------------*/
