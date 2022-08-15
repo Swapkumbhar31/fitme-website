@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #f4f4f4;
+    align-content: center;
+    min-height: 100vh;
+}
+
+:root {
+    --eco: #26424C;
+    --off-white: #f7f7f7;
+    --cap-violet: #3f48cc;
+    --hr-blue: #05386b
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.eco-green {
+    color: var(--eco);
+}
+
+
+
+/*-------------------------------------*/
+/*      >>> Header Styles <<<          */
+/*-------------------------------------*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 0 0 6px 3px lightgray;
+    /*margin-bottom: 3rem;*/
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 2;
+}
+
+.top-fixed {
+    /* For Sticky Navbar */
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 50px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    /* font-weight: bold; */
+}
+
+nav ul {
+    /*max-height: 192px;*/
+    padding-bottom: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    color: #26424C;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #26424C;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #26424C;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a.active {
+    color: white;
+    background-color: #26424C;
+   
+    
+}
+
+.caret {
+    display: none;
+}
+
+.menulist-container {
+    margin-top: 2vh;
+}
+
+nav input {
+    display: none;
+}
+/*--------------------------------------*/
+/*       >>> Content Styles <<<         */
+/*--------------------------------------*/
+
+.container {
+    top: 80px;
+}
+
+main {
+	margin-top:80px;
+    font-family:  Cambria, "Times New Roman", Times, serif;
+    /*font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;*/
+}
+
+/*-------------------------------------*/
+/*       >>> Footer Styles <<<         */
+/*-------------------------------------*/
+
+.footer {
+    margin-bottom: 0;
+    position: relative;
+    max-height: 10rem;
+    background-color: black;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box {
+    margin: 0.5rem 0.5rem 0;
+    padding: 0.5rem 0.5rem 1rem;
+}
+
+.top-box {
+    padding-top: 1.5rem;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #f4f4f4;
+    align-content: center;
+    min-height: 100vh;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 85vw;
+    margin: 0 auto;
+}
+.maparea{
+    background: #fff;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;	
+}
+.map{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width:98%;
+	height:100%;
+}
+.container h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+	text-align: center;
+}
+.container p{
+    padding-top: 1.5rem;
+    font-size: 16px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+	text-align: center;
+}
+.container label{
+    padding-top : 10px;
+}
+
+
+.links{
+    margin: 15px 0;
+}
+.links li{
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: black;
+}
+.links li:hover a{
+    color :black;
+}
+.vertical-line{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+}
+.icons li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color: gray;
+}
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    padding-top: 2rem;
+  width: 100%; /* Full width */
+  padding: 6px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style inputs with type="email", select elements and textareas */
+input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 6px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 6px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:  #26424C;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit{
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+
+/* When moving the mouse over the submit button, add a  color */
+input[type=submit]:hover {
+    color: #26424C;
+  background-color: white;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  background-color : #EDEDED;
+  padding: 20px;
+  
+}
+
+
+
+address
+{
+	font-style: normal;
+	font-size: 70%;
+	font-family: ui-rounded;
+	text-align: left;
+	opacity: 0.7;
+}
+
+label{
+	opacity: 0.7;
+}
