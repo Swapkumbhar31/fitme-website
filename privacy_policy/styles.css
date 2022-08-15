@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --primaryColor: #26424C;
+    --primaryLightColor: #51afd1;
+    --off-white: #eaeaea;
+    --dark-white: #373737;
+    --white: #fff;
+    --black: rgb(0, 0, 0);
+    --hr-blue: #05386b
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.primaryColor {
+    color: var(--primaryLightColor);
+}
+
+/*-------------------------------------*/
+/*      >>> Header Styles <<<          */
+/*-------------------------------------*/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    /*margin-bottom: 3rem;*/
+    background-color: var(--primaryColor);
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 2;
+}
+
+.top-fixed {
+    /* For Sticky Navbar */
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 75px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    /* font-weight: bold; */
+}
+
+nav ul {
+    /*max-height: 192px;*/
+    padding-bottom: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: var(--off-white);
+    color: var(--primaryColor);
+}
+
+nav ul li a.active {
+    color: var(--primaryColor);
+    background-color: var(--white);
+}
+
+.caret {
+    display: none;
+}
+
+.menulist-container {
+    margin-top: 2vh;
+}
+
+nav input {
+    display: none;
+}
+
+/*--------------------------------------*/
+/*       >>> Content Styles <<<         */
+/*--------------------------------------*/
+
+.container {
+    top: 80px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /*-------------------------------------*/
+    /*      >>> Header Styles <<<          */
+    /*-------------------------------------*/
+    .navbar {
+        position: relative;
+        ;
+        background-color: var(--primaryColor);
+        /*border-bottom: 1px solid black;*/
+    }
+
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 2;
+        background-color: var(--primaryColor);
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    nav input {
+        display: inline-block;
+        width: 40px;
+        height: 32px;
+        transform: translate(-140%, 0%);
+        position: fixed;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    nav input+div.menu-wrapper>ul#menu {
+        opacity: 0;
+        max-height: 0;
+        min-height: 0;
+    }
+
+    nav input:checked+div.menu-wrapper>ul#menu {
+        opacity: 1;
+        min-height: 50vh;
+        max-height: 50vh;
+        transition: 0.5s;
+    }
+
+    nav input:checked+div.menu-wrapper>svg#icon {
+        transform: rotate(90deg);
+        fill: var(--white);
+        transition: 0.5s;
+    }
+
+    #menu {
+        overflow: hidden;
+        transition: 0.7s;
+    }
+
+    .menulist-container {
+        margin-top: 30px;
+    }
+
+    nav ul li {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    nav ul li a {
+        padding: 0.7rem 2rem;
+        font-weight: lighter;
+    }
+
+    nav ul li a.active {
+        background-color: white;
+        color: var(--primaryColor);
+        /* font-weight: bold; */
+    }
+
+    nav ul li a:hover {
+        background-color: var(--off-white);
+        color: var(--primaryColor);
+    }
+
+    .caret {
+        width: 2.5rem;
+        transform: rotate(180deg);
+        display: inline-block;
+        color: var(--white);
+        margin-right: 1rem;
+        transition: transform .5s;
+    }
+
+    .click {
+        transform: rotate(90deg);
+        fill: var(--primaryColor);
+        transition: 0.5s;
+    }
+
+    /*--------------------------------------*/
+    /*       >>> Content Styles <<<         */
+    /*--------------------------------------*/
+    .container {
+        top: 0;
+    }
+
+    .responsive-text {
+        line-height: 30px;
+        font-size: 1rem;
+        word-break: break-word;
+    }
+
+    .content {
+
+        max-width: 95%;
+        padding: 0.2rem;
+        margin: 1rem auto 1.5rem;
+
+    }
+
+    .row {
+        margin: 2rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .column {
+        flex: 100%;
+        padding: 0.1rem;
+    }
+}
+
+/*----------------------------------------------*/
+/*       >>> Media Queries - Mobile <<<         */
+/*----------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .content {
+
+        max-width: 95%;
+        padding: 0.2rem;
+        margin: 0.5rem auto 1rem;
+
+    }
+
+    .responsive-text {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .p-title {
+        margin-bottom: 0.5rem;
+        font-size: 1.618rem;
+    }
+}
