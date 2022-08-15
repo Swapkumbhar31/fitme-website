@@ -294,3 +294,27 @@ nav input {
         font-size: 1.618rem;
     }
 }
+
+/*-------------------------------------*/
+/*       >>> Footer Styles <<<         */
+/*-------------------------------------*/
+
+.footer {
+    padding: 40px;
+    margin: 0;
+    position: relative;
+    background-color: var(--primaryColor);
+    color: white;
+    bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-img {
+    width: 8%;
+}
+
+@media (min-width:601px) {
+    .footer-img {
+        width: 15%;
+    }
+}
