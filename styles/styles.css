@@ -335,6 +335,24 @@ nav input {
     width: 8%;
 }
 
+.bodyText {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 1em;
+
+    display: block;
+    margin: 8px;
+    margin-top: 8%;
+}
+
+.bodyText p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bodyText ul {
+    margin-left: 20px;
+}
+
 @media (min-width: 601px) {
     .quarter {
         width: 24.99999%
@@ -344,12 +362,12 @@ nav input {
 @media (max-width: 992px) {
 
     .row-padding,
-    .row-padding > .half,
-    .row-padding > .third,
-    .row-padding > .twothird,
-    .row-padding > .threequarter,
-    .row-padding > .quarter,
-    .row-padding > .col {
+    .row-padding>.half,
+    .row-padding>.third,
+    .row-padding>.twothird,
+    .row-padding>.threequarter,
+    .row-padding>.quarter,
+    .row-padding>.col {
         padding: 8px
     }
 }
@@ -357,7 +375,8 @@ nav input {
 @media only screen and (max-width: 1024px) {
 
     .navbar {
-        position: relative;;
+        position: relative;
+        ;
         background-color: var(--primaryColor);
     }
 
@@ -382,20 +401,20 @@ nav input {
         z-index: 2;
     }
 
-    nav input + div.menu-wrapper > ul#menu {
+    nav input+div.menu-wrapper>ul#menu {
         opacity: 0;
         max-height: 0;
         min-height: 0;
     }
 
-    nav input:checked + div.menu-wrapper > ul#menu {
+    nav input:checked+div.menu-wrapper>ul#menu {
         opacity: 1;
         min-height: 50vh;
         max-height: 50vh;
         transition: 0.5s;
     }
 
-    nav input:checked + div.menu-wrapper > svg#icon {
+    nav input:checked+div.menu-wrapper>svg#icon {
         transform: rotate(90deg);
         fill: var(--white);
         transition: 0.5s;
@@ -649,7 +668,9 @@ nav input {
 }
 
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     padding: 0.5rem;
     width: 100%;
     border: 1px solid #ccc;
@@ -660,7 +681,9 @@ input[type=text], select, textarea {
     resize: vertical
 }
 
-input[type=email], select, textarea {
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 6px;
     border: 1px solid #ccc;
@@ -719,6 +742,10 @@ main {
 .box {
     margin: 0.5rem 0.5rem 0;
     padding: 0.5rem 0.5rem 1rem;
+}
+
+.box a {
+    color: var(--white);
 }
 
 .top-box {
@@ -849,7 +876,7 @@ img {
     color: gray;
 }
 
-.quarter > .card {
+.quarter>.card {
     min-height: 350px;
 }
 
@@ -905,20 +932,20 @@ img {
   }
 @media only screen and (max-width: 906px) {
 
-    nav input + div.menu-wrapper > ul#menu {
+    nav input+div.menu-wrapper>ul#menu {
         opacity: 0;
         max-height: 0;
         min-height: 0;
     }
 
-    nav input:checked + div.menu-wrapper > ul#menu {
+    nav input:checked+div.menu-wrapper>ul#menu {
         opacity: 1;
         min-height: 50vh;
         max-height: 50vh;
         transition: 0.5s;
     }
 
-    nav input:checked + div.menu-wrapper > svg#icon {
+    nav input:checked+div.menu-wrapper>svg#icon {
         transform: rotate(90deg);
         fill: var(--eco);
         transition: 0.5s;
@@ -969,7 +996,8 @@ img {
     }
 
 
-    #contact_us section, #about_us section {
+    #contact_us section,
+    #about_us section {
         grid-template-columns: 1fr;
         width: 100%;
     }
@@ -1185,6 +1213,3 @@ img {
         font-size: 15px;
     }
 }
-
-
-
