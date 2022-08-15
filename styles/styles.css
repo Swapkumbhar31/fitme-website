@@ -855,33 +855,6 @@ img {
 
 @media only screen and (max-width: 906px) {
 
-    .navbar {
-        position: relative;;
-        background-color: transparent;
-        box-shadow: 0 0 3px 3px lightgray;
-    }
-
-    nav ul {
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        z-index: 2;
-        background-color: var(--off-white);
-        text-align: center;
-        padding-bottom: 0;
-    }
-
-    nav input {
-        display: inline-block;
-        width: 40px;
-        height: 32px;
-        transform: translate(-140%, 0%);
-        position: fixed;
-        opacity: 0;
-        z-index: 2;
-    }
-
     nav input + div.menu-wrapper > ul#menu {
         opacity: 0;
         max-height: 0;
@@ -946,7 +919,7 @@ img {
     }
 
 
-    section {
+    #contact_us section, #about_us section {
         grid-template-columns: 1fr;
         width: 100%;
     }
@@ -956,7 +929,7 @@ img {
     }
 
     .content {
-        height: 100vh;
+        /*height: 100vh;*/
     }
 
     .content h2 {
@@ -1037,52 +1010,6 @@ img {
 
 
 @media only screen and (max-width: 906px) {
-
-    .navbar {
-        position: relative;;
-        background-color: transparent;
-        box-shadow: 0 0 3px 3px lightgray;
-    }
-
-    nav ul {
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        z-index: 2;
-        background-color: var(--off-white);
-        text-align: center;
-        padding-bottom: 0;
-    }
-
-    nav input {
-        display: inline-block;
-        width: 40px;
-        height: 32px;
-        transform: translate(-140%, 0%);
-        position: fixed;
-        opacity: 0;
-        z-index: 2;
-    }
-
-    nav input + div.menu-wrapper > ul#menu {
-        opacity: 0;
-        max-height: 0;
-        min-height: 0;
-    }
-
-    nav input:checked + div.menu-wrapper > ul#menu {
-        opacity: 1;
-        min-height: 50vh;
-        max-height: 50vh;
-        transition: 0.5s;
-    }
-
-    nav input:checked + div.menu-wrapper > svg#icon {
-        transform: rotate(90deg);
-        fill: var(--eco);
-        transition: 0.5s;
-    }
 
     #menu {
         overflow: hidden;
