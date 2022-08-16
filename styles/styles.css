@@ -921,15 +921,29 @@ img {
     max-width: 1000px;
     margin: auto;
   }
-  .work-list div {
-    margin-bottom: 30px;
+  .work-list > div {
+    margin-bottom: 60px;
+  }
+
+  .work-list .work-list-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.3rem;
+  }
+
+  .work-list h1 {
+      font-size: 2rem;
+      padding: 60px 0;
   }
 
   .work-list img {
-    height: 200px;
-    width: auto;
+    /*height: 200px;*/
+    width: 100%;
     border-radius: 20px;
   }
+
+
 @media only screen and (max-width: 906px) {
 
     nav input+div.menu-wrapper>ul#menu {
