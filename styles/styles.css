@@ -956,7 +956,12 @@ img {
       font-size: 1.3rem;
   }
 
-  .work-list h1 {
+.work-list .work-list-content li {
+    list-style-image: url("../images/circle-check-solid.svg");
+    height: 45px;
+}
+
+.work-list h1 {
       font-size: 2rem;
       padding: 60px 0;
   }
