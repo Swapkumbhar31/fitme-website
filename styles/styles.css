@@ -221,7 +221,6 @@ nav input {
     background: var(--primaryColor);
     border: 2px solid var(--primaryColor);
     border-radius: 2px;
-    width: 95%;
 }
 
 .hr2-right {
@@ -626,18 +625,15 @@ nav input {
     }
 
     .content {
-
-        max-width: 95%;
+        max-width: 100%;
         padding: 0.2rem;
         margin: 1rem auto 1.5rem;
-
     }
 
     .row {
         margin: 2rem 0;
         flex-wrap: wrap;
         justify-content: center;
-
     }
 
     .column {
@@ -686,7 +682,6 @@ nav input {
 .container h2 {
     text-transform: uppercase;
     font-size: 36px;
-    letter-spacing: 6px;
     opacity: 0.9;
     text-align: center;
 }
@@ -893,7 +888,6 @@ img {
 .content h2 {
     text-transform: uppercase;
     font-size: 1.5rem;
-    letter-spacing: 6px;
     opacity: 0.9;
     text-align: center;
 }
@@ -1068,6 +1062,22 @@ img {
     margin: 0 10px;
 }
 
+.download-section {
+    background-color: white;
+    width: 100%;
+    margin: 80px auto;
+    padding: 30px;
+}
+
+.download-section h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px auto;
+}
+.download-section .button {
+
+}
+
 @media only screen and (max-width: 906px) {
 
     nav input+div.menu-wrapper>ul#menu {
@@ -1180,6 +1190,9 @@ img {
         margin-left: 20px;
     }
 
+    .banner-img .banner-text {
+        padding: 20px;
+    }
     .work-list div {
         margin: 20px;
     }
@@ -1205,6 +1218,10 @@ img {
     section {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    .button.lg {
+        min-width: 100%;
     }
     #about_us .content, #about_us .content h3  {
         padding: 30px 10px;
@@ -1386,7 +1403,7 @@ div {
 
     .content {
 
-        max-width: 95%;
+        max-width: 100%;
         padding: 0.2rem;
         margin: 0.5rem auto 1rem;
 
