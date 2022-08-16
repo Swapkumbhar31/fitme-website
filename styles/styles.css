@@ -1014,6 +1014,10 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#about_us .content h3 {
+    font-size: 2rem;
+}
+
 .work-list {
     max-width: 1000px;
     margin: auto;
