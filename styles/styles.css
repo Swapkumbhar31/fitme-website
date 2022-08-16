@@ -264,6 +264,26 @@ nav input {
     margin-bottom: 0.5rem;
 }
 
+.mt-3 {
+    margin-top: 30px;
+}
+
+#contact_us_mobile {
+    text-align: center;
+}
+
+#contact_us_mobile .sub-title {
+    font-size: 1.5rem;
+    display: block;
+}
+
+#contact_us_mobile i {
+    padding: 20px 28px;
+    color: var(--primaryColor);
+    border-radius: 50%;
+    border: 2px solid var(--primaryColor);
+}
+
 .row-padding:after,
 .row-padding:before {
     content: "";
@@ -839,8 +859,6 @@ input[type=submit]:hover {
 
 address {
     font-style: normal;
-    font-size: 70%;
-    font-family: ui-rounded;
     text-align: left;
     opacity: 0.7;
 }
@@ -1075,6 +1093,22 @@ img {
     border-radius: 20px;
   }
 
+.or {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:grey;
+}
+
+.or:after,
+.or:before {
+    content: "";
+    display: block;
+    background: grey;
+    width: 30%;
+    height:1px;
+    margin: 0 10px;
+}
 
 @media only screen and (max-width: 906px) {
 
