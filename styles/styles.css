@@ -421,7 +421,7 @@ nav input {
 /* CARDS  - prototype  */
 
 .card-content {
-    padding: 30px;
+    margin: 30px;
     font-size: 1rem;
 }
 
@@ -1208,6 +1208,8 @@ img {
     }
     #about_us .content, #about_us .content h3  {
         padding: 30px 10px;
+        width: 100%;
+        text-align: center;
     }
 
     #about_us p {
